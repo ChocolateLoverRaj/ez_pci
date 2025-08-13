@@ -7,6 +7,7 @@ repository = "https://github.com/ChocolateLoverRaj/ez_pci"
 keywords = ["pci", "pcie", "osdev", "x86_64", "msi", "bar"]
 categories = ["no-std"]
 authors = ["Rajas Paranjpe <paranjperajas@gmail.com>"]
+license = "AGPL-3.0-only"
 
 [dependencies]
 acpi = { version = "5.2.0", default-features = false }
