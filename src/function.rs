@@ -228,6 +228,10 @@ impl PciFunction<'_> {
     pub fn msi(&mut self) -> Option<Option<Msi>> {
         Msi::find(self)
     }
+
+    pub fn msi_x(&mut self) -> Option<Option<MsiX>> {
+        MsiX::find(self)
+    }
 }
 
 #[derive(Debug)]

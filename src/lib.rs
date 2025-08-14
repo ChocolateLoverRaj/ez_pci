@@ -16,6 +16,7 @@ mod function;
 mod get_phys_range_to_map;
 mod header_type;
 mod msi;
+mod msi_x;
 mod pci_access;
 mod pci_config;
 
@@ -27,5 +28,6 @@ pub use function::*;
 pub use get_phys_range_to_map::*;
 pub use header_type::*;
 pub use msi::*;
+pub use msi_x::*;
 pub use pci_access::*;
 use pci_config::*;

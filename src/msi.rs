@@ -202,7 +202,7 @@ bitfield! {
     u8;
     /// If this is 1, you can set the message address to a 64 bit address.
     /// If this is 0, you can only set the message address to a 32-bit address.
-    destination_id, set_destination_id: 19, 12;
+    pub destination_id, set_destination_id: 19, 12;
     u8;
     /// Can be set to efficiently distribute the interrupt to a less-busy CPU.
     /// However I don't understand this so read the SDM if you want this.
