@@ -232,6 +232,25 @@ impl PciFunction<'_> {
     pub fn msi_x(&mut self) -> Option<Option<MsiX>> {
         MsiX::find(self)
     }
+
+    pub fn command(&mut self) -> CommandRegister {
+        CommandRegister(self.pci.read_u16(
+            self.bus_number,
+            self.device_number,
+            self.function_number,
+            0x4,
+        ))
+    }
+
+    pub fn set_command(&mut self, command: CommandRegister) {
+        self.pci.write_u16(
+            self.bus_number,
+            self.device_number,
+            self.function_number,
+            0x4,
+            command.0,
+        );
+    }
 }
 
 #[derive(Debug)]

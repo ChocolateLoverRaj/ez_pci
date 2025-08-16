@@ -11,6 +11,7 @@
 mod bar;
 mod bus;
 mod capabilities;
+mod command;
 mod device;
 mod function;
 mod get_phys_range_to_map;
@@ -23,6 +24,7 @@ mod pci_config;
 pub use bar::*;
 pub use bus::*;
 pub use capabilities::*;
+pub use command::*;
 pub use device::*;
 pub use function::*;
 pub use get_phys_range_to_map::*;
