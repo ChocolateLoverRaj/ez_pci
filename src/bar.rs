@@ -6,7 +6,7 @@ bitfield! {
     #[derive( Clone, Copy)]
   pub struct BarCommon(u32);
   impl Debug;
-  u8; pub(super) bar_type, _: 1, 1;
+  u8; pub(super) bar_type, _: 0, 0;
 }
 
 bitfield! {
